@@ -2,13 +2,10 @@ from dotenv import load_dotenv
 import os
 from binance.client import Client
 
-# Charger les variables depuis .env
 load_dotenv()
-
 api_key = os.getenv("BINANCE_API_KEY")
 api_secret = os.getenv("BINANCE_API_SECRET")
 
-# Connexion Binance
 client = Client(api_key, api_secret)
 
 try:
@@ -19,4 +16,3 @@ try:
             print(balance)
 except Exception as e:
     print("Erreur de connexion :", e)
-

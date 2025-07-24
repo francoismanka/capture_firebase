@@ -1,4 +1,4 @@
-*.json  
-.env  
-*.key  
-*.pem 
+*.json
+.env
+*.key
+*.pem
